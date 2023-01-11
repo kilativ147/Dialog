@@ -397,7 +397,8 @@ h6 {
 .greatings p {
   position: relative;
   /* padding: 0 0 0 60px; */
-  /* transform: translateX(-30px); */
+  transform: translateX(+25px);
+  letter-spacing: 1px;
 }
 .greatings p::before {
   content: '';
@@ -411,20 +412,22 @@ h6 {
 .greatings h2 {
   font-size: 32px;
   font-weight: 700;
-  line-height: 40px;
+  padding: 25px;
 }
 .greatings__video {
+  background-color: #777;
   margin: 0 auto;
-  width: 400px;
-  height: 200px;
-  background-color: #e00;
+  aspect-ratio: 1.7;
+  width: clamp(200px, 80vw, 600px);
+  border-radius: 25px;
+  overflow: hidden;
 }
 .greatings__background {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
-  background-color: #af7;
+  /* background-color: #af7; */
   height: 150px;
   width: 100%;
 }
