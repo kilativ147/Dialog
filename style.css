@@ -444,8 +444,11 @@ h6 {
 .programs__list-row {
 }
 .programs__program-column {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   padding: 1%;
+}
+.programs__program-column:hover {
+  box-shadow: 0px 5px 5px #ddd;
 }
 .program__title {
   border: 1px solid #ccc;
@@ -453,24 +456,50 @@ h6 {
   padding: 5% 10%;
 }
 .program__price {
-  font-size: 40px;
+  font-size: 20px;
   color: #00f;
   font-weight: 700;
   margin: 0 0 15px;
 }
+.program__price span {
+  font-size: 32px;
+}
 .program__description {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
-program__advantages-list
-  program__advantages-list
-  li
-  program__getit
-  program__getit
-  button
-  program__getit
-  p
-  program__getit
-  p::before {
-  content: '';
+.program__advantages-list {
+  text-align: left;
+  flex: 1 1 auto;
+  margin: 15px 0;
+}
+.program__advantages-list li {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0px 0 5px 25px;
+}
+.program__advantages-list li::before {
+  content: url(./img/Check.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+.program__getit {
+}
+.program__getit button {
+  padding: 5px;
+  width: 90%;
+  color: #fff;
+  font-size: 20px;
+  background-color: #f44;
+  border-radius: 50px;
+}
+.program__getit a {
+  display: block;
+  color: #00f;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px;
 }
