@@ -239,11 +239,11 @@ h6 {
   .header__getcall {
     margin: 5px auto 25px;
   }
-  .contacts {
+  .contacts-row {
     flex-direction: column-reverse;
     margin: 10px 0;
   }
-  .contacts__phone {
+  .contacts__phone-row {
     flex-direction: column;
     margin: 0 auto;
   }
@@ -295,7 +295,7 @@ h6 {
     transform: rotate(-45deg) translate(0px, -50%);
   }
 
-  .header__content._active {
+  .header__content-column._active {
     top: 0;
   }
 }
@@ -452,7 +452,7 @@ h6 {
   border-radius: 5px;
   padding: 5% 10%;
   flex: 0 0 30%;
-  font-size: clamp(10px, 2vw, 16px);
+  font-size: clamp(12px, 2vw, 16px);
   display: flex;
   flex-direction: column;
   justify-content: center;

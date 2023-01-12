@@ -1,6 +1,6 @@
 //Меню бургер
 const burgerButton = document.querySelector('.header__burger');
-const burgerContainer = document.querySelector('.header__content');
+const burgerContainer = document.querySelector('.header__content-column');
 if (burgerContainer){
   document.addEventListener("click", burg); 
   function burg(event) {
