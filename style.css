@@ -318,7 +318,7 @@ h6 {
   margin: 0px auto 0px;
   justify-content: space-between;
   align-items: center;
-  gap:5%;
+  gap: 5%;
 }
 .start__text {
 }
@@ -443,19 +443,34 @@ h6 {
 
 .programs__list-row {
 }
-.programs__program-column{
-
+.programs__program-column {
+  border: 1px solid blue;
+  padding: 1%;
 }
-program__title
-program__price
-program__description
-
+.program__title {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5% 10%;
+}
+.program__price {
+  font-size: 40px;
+  color: #00f;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+.program__description {
+  font-size: 20px;
+  font-weight: 600;
+}
 program__advantages-list
-program__advantages-list li
-
-program__getit
-program__getit button
-program__getit p
-program__getit p::before{
-  content:'';
+  program__advantages-list
+  li
+  program__getit
+  program__getit
+  button
+  program__getit
+  p
+  program__getit
+  p::before {
+  content: '';
 }
