@@ -503,3 +503,6 @@ h6 {
   font-weight: 600;
   margin: 5px;
 }
+.program__getit a:hover {
+  color: #f44;
+}
