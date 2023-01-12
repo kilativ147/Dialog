@@ -78,18 +78,17 @@ h6 {
   font-weight: 400;
 }
 /*------------------------------------------------*/
-
-.flex-row {
+[class*='-row'] {
   display: flex;
 }
-.flex-column {
+[class*='-column'] {
   display: flex;
   flex-direction: column;
 }
-.wrapper {
+.wrapper-column {
   height: 100%;
 }
-.main {
+.main-column {
   flex: 1 1 auto;
 }
 /*--------------------------------------------------------*/
@@ -120,57 +119,57 @@ h6 {
   color: #f00;
 }
 
-.header__content {
+.header__content-column {
 }
 .header__content:first-child {
 }
-.contacts {
+.contacts-row {
   justify-content: space-between;
   padding: 0 0 5px;
   box-shadow: 0px 1px 1px #ddd;
 }
-.contacts__media {
+.contacts__media-row {
   flex: 1 1;
   max-width: 80px;
   justify-content: space-between;
 }
-.contacts__media a {
+.contacts__media-row a {
 }
-.contacts__media a img {
+.contacts__media-row a img {
 }
 
-.contacts__phone {
+.contacts__phone-row {
 }
-.contacts__phone div {
+.contacts__phone-row div {
   background-color: rgba(0, 0, 0, 0);
   margin: 0 15px 0 0;
 }
-.contacts__phone div:last-child {
+.contacts__phone-row div:last-child {
   margin: 0;
 }
-.contacts__phone div img {
+.contacts__phone-row div img {
 }
-.contacts__phone div a {
+.contacts__phone-row div a {
   font-weight: 700;
   color: black;
   font-size: 14px;
 }
 
-.header__links {
+.header__links-row {
   padding: 5px 0 0;
   justify-content: end;
   align-items: center;
 }
-.header__nav-list {
+.header__nav-list-row {
 }
-.header__nav-list li {
+.header__nav-list-row li {
   margin: 0 5px;
 }
-.header__nav-list li a {
+.header__nav-list-row li a {
   color: #000;
   font-weight: 600;
 }
-.header__nav-list li a:hover {
+.header__nav-list-row li a:hover {
   color: rgb(0, 15, 228);
 }
 .header__getcall {
@@ -211,7 +210,7 @@ h6 {
   .header__cantainer {
     max-width: 100%;
   }
-  .header__content {
+  .header__content-column {
     position: fixed;
     top: -100%;
     width: 100%;
@@ -224,20 +223,20 @@ h6 {
     margin: 0 auto;
     padding: 40px 0 10px;
   }
-  .contacts__media {
+  .contacts__media-row {
     margin: 0 auto;
   }
-  .header__links {
+  .header__links-row {
     width: 100%;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
     border-bottom: 1px solid #ccc;
   }
-  .header__nav-list {
+  .header__nav-list-row {
     flex-direction: column;
   }
-  .header__nav-list li {
+  .header__nav-list-row li {
     margin: 5px 0;
   }
   .header__getcall {
@@ -251,7 +250,7 @@ h6 {
     flex-direction: column;
     margin: 0 auto;
   }
-  .contacts__phone div {
+  .contacts__phone-row div {
   }
   .header__burger {
     z-index: 15;
@@ -310,15 +309,16 @@ h6 {
   width: clamp(100px, 90vw, 768px);
   margin: 0 auto;
 }
-.main {
+.main-column {
   padding: 0 10px;
 }
-.start__container {
+.start__container-row {
   /* width: 100%; */
   border: 1px solid #e00;
   margin: 0px auto 0px;
   justify-content: space-between;
   align-items: center;
+  gap:5%;
 }
 .start__text {
 }
@@ -359,7 +359,7 @@ h6 {
 }
 
 @media (max-width: 767px) {
-  .start__container {
+  .start__container-row {
     /* flex-direction: column; */
     display: block;
     margin: 100px auto 50px;
@@ -386,21 +386,20 @@ h6 {
 }
 
 /*===Sections===*/
-.section{
-  border: 1px solid #ee0;
-  width: 100%;
+.section {
+  border: 1px solid rgb(238, 135, 0);
+  /* width: 100%; */
   margin: 50px auto 0;
   text-align: center;
   position: relative;
   padding: 0 0 50px 0;
 }
-.subtitle{
-  /* padding: 0 0 0 60px; */
+.subtitle {
   transform: translateX(+25px);
   letter-spacing: 1px;
   position: relative;
 }
-.subtitle::before{
+.subtitle::before {
   content: '';
   height: 1px;
   width: 50px;
@@ -409,18 +408,14 @@ h6 {
   top: 50%;
   transform: translate(-60px, -0%);
 }
-.title{
+.title {
   font-size: 32px;
   font-weight: 700;
-  padding: 25px;
+  padding: 5px 0 25px;
 }
 /*========Greatings=======*/
 .greatings {
-}
-.greatings p {}
-.greatings p::before {
-}
-.greatings h2 {
+  width: 100%;
 }
 .greatings__video {
   background-color: #777;
@@ -443,4 +438,24 @@ h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/*=======Programs======*/
+
+.programs__list-row {
+}
+.programs__program-column{
+
+}
+program__title
+program__price
+program__description
+
+program__advantages-list
+program__advantages-list li
+
+program__getit
+program__getit button
+program__getit p
+program__getit p::before{
+  content:'';
 }
