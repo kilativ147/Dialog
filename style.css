@@ -389,7 +389,6 @@ h6 {
   margin: 50px auto 0;
   text-align: center;
   position: relative;
-  padding: 0 0 50px 0;
 }
 .subtitle {
   transform: translateX(+25px);
@@ -413,6 +412,7 @@ h6 {
 /*========Greatings=======*/
 .greatings {
   width: 100%;
+  padding: 0 0 50px 0;
 }
 .greatings__video {
   background-color: #777;
@@ -511,10 +511,51 @@ h6 {
   color: #f44;
 }
 /*===Licension===*/
-.licension{}
-.licension img{}
-
-.licension__area{}
-.licension__area h2{}
-.licension__area p{}
-.licension__area button{}
+.licension {
+  position: relative;
+}
+.licension__area {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: -1;
+  background: linear-gradient(45deg, #33f, #66f);
+  border-radius: 25px;
+}
+.licension-row {
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 5%;
+  gap: 5%;
+}
+.licension-row img {
+  max-width: 40%;
+}
+.licension-column {
+  color: #fff;
+  font-size: 2vw;
+  text-align: left;
+}
+.licension-column h2 {
+  font-size: 1.5em;
+  margin: 1vw 0;
+}
+.licension-column p {
+  font-size: 0.75em;
+  margin: 1vw 0;
+}
+.licension-column button {
+  color: #fff;
+  font-size: 1em;
+  width: fit-content;
+  padding: 5px 20px;
+  margin: 1vw 0;
+  background-color: #f44;
+  border-radius: 50px;
+}
+.licension-column button:hover {
+  background-color: #f33;
+}
