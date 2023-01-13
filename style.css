@@ -439,10 +439,12 @@ h6 {
 /*=======Programs======*/
 
 .programs__list-row {
+  flex-wrap: wrap;
 }
 .programs__program-column {
   padding: 1%;
   flex: 1 1 25%;
+  /* min-width: 200px; */
 }
 .programs__program-column:hover {
   box-shadow: 0px 5px 5px #ddd;
@@ -508,3 +510,11 @@ h6 {
 .program__getit a:hover {
   color: #f44;
 }
+/*===Licension===*/
+.licension{}
+.licension img{}
+
+.licension__area{}
+.licension__area h2{}
+.licension__area p{}
+.licension__area button{}
