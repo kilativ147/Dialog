@@ -511,7 +511,7 @@ h6 {
   color: #f44;
 }
 /*===Licension===*/
-.licension {
+.licension__container {
   position: relative;
 }
 .licension__area {
@@ -536,7 +536,7 @@ h6 {
 }
 .licension-column {
   color: #fff;
-  font-size: 2vw;
+  font-size: clamp(10px, 2vw, 30px);
   text-align: left;
 }
 .licension-column h2 {
@@ -558,4 +558,22 @@ h6 {
 }
 .licension-column button:hover {
   background-color: #f33;
+}
+/*===Partners===*/
+.partners__container {
+}
+.partners__container p {
+}
+.partners__container h2 {
+}
+.partners-row {
+  width: 100%;
+  gap: 3vw;
+  /* justify-content: space-between; */
+  /* overflow: hidden; */
+}
+.partners-row img {
+  width: 5%;
+  flex: 1 1;
+  /* object-fit: */
 }
