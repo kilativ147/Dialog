@@ -458,7 +458,7 @@ h6 {
 }
 .programs__program-column {
   padding: 1%;
-  flex: 1 1 25%;
+  flex: 0 0 25%;
   /* min-width: 200px; */
 }
 .programs__program-column:hover {
@@ -468,22 +468,29 @@ h6 {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 5% 10%;
-  flex: 0 0 30%;
-  font-size: clamp(12px, 2vw, 16px);
+  /* flex: 1 1 auto; */
+  /* height: 100px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: space-between; */
 }
 .program__price {
-  font-size: 1em;
-  color: #00f;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: calc((22 / 18) * 100%);
+  color: #3035c3;
   margin: 0 0 15px;
+  flex: 1 1 auto;
 }
 .program__price span {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .program__description {
-  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc((20 / 16) * 100%);
 }
 .program__advantages-list {
   text-align: left;
