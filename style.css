@@ -610,5 +610,5 @@ h6 {
 }
 
 .hidden {
-  display: none;
+  /* display: none; */
 }
