@@ -91,6 +91,9 @@ h6 {
 }
 /*--------------------------------------------------------*/
 .button-red {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+	font-size: 16px;
   background-color: #e6514a;
   color: #fff;
 }
@@ -207,7 +210,7 @@ h6 {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
   .header {
   }
   .header__head {
@@ -372,7 +375,7 @@ h6 {
 
 @media (max-width: 767px) {
   .start__container-row {
-    /* flex-direction: column; */
+    flex-direction: column;
     display: block;
     margin: 100px auto 50px;
     align-items: center;
@@ -453,26 +456,57 @@ h6 {
 }
 /*=======Programs======*/
 
+@media (max-width: 500px){
 .programs__list-row {
-  flex-wrap: wrap;
+	flex-wrap: no-wrap;
+	overflow:scroll;
+	gap:20px;
+	}
+	.programs__program-column {
+  padding: 1%;
+	min-width: 250px;
+	}
+}
+@media (min-width: 501px){
+	.programs__list-row {
+	flex-wrap: wrap;
+	flex: 1 1 20%;
+	gap:20px;
+	}
+
+	.programs__program-column {
+  padding: 1%;
+  flex: 1 0 45%;
+	}
+}
+.programs__list-row {
+	flex-wrap: no-wrap;
+	gap:15px;
+}
+@media (min-width: 900px){
+	.programs__program-column {
+	padding: 1%;
+  flex: 1 1 20%;
+	}
 }
 .programs__program-column {
-  padding: 1%;
-  flex: 0 0 25%;
-  /* min-width: 200px; */
-}
+	border: 1px solid #eee;
+	border-radius: 5px;
+	}
 .programs__program-column:hover {
-  box-shadow: 0px 5px 5px #ddd;
+  box-shadow: 0px 5px 5px #ccc;
 }
 .program__title {
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 5% 10%;
-  /* flex: 1 1 auto; */
+  padding: 20px;
+  min-height: 150px;
+  max-height: 150px;
+  overflow: hidden;
+  flex: 1 0 auto;
   /* height: 100px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 .program__price {
   font-family: 'Montserrat', sans-serif;
@@ -481,7 +515,7 @@ h6 {
   line-height: calc((22 / 18) * 100%);
   color: #3035c3;
   margin: 0 0 15px;
-  flex: 1 1 auto;
+  flex: 1 0;
 }
 .program__price span {
   font-size: 2em;
@@ -491,6 +525,7 @@ h6 {
   font-weight: 700;
   font-size: 16px;
   line-height: calc((20 / 16) * 100%);
+  flex: 0 1 auto;
 }
 .program__advantages-list {
   text-align: left;
@@ -524,9 +559,7 @@ h6 {
   font-size: 14px;
   margin: 5px;
 }
-.program__getit a:hover {
-  color: #f44;
-}
+
 /*===Licension===*/
 .licension__container {
   position: relative;
@@ -546,31 +579,55 @@ h6 {
   justify-content: space-evenly;
   align-items: center;
   padding: 0 5%;
-  gap: 5%;
+	gap: clamp(20px, 4vw,80px);
 }
 .licension-row img {
   max-width: 40%;
 }
 .licension-column {
   color: #fff;
-  font-size: clamp(10px, 2vw, 30px);
   text-align: left;
 }
 .licension-column h2 {
-  font-size: 1.5em;
-  margin: 1vw 0;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(24px, 3vw, 32px);
+	line-height: 130%;
+  margin: 0 0 25px;
 }
 .licension-column p {
-  font-size: 0.75em;
-  margin: 1vw 0;
+  margin: 0 0 32px;
+	line-height: 150%;
 }
 .licension-column button {
-  font-size: 1em;
   width: fit-content;
-  padding: 5px 20px;
-  margin: 1vw 0;
+  padding: 16px clamp(24px, 5vw, 60px);
   border-radius: 50px;
 }
+
+@media (max-width: 768px){
+	.licension__area {
+  height: 90%;
+  bottom: 0;
+  transform: translate(0, -45%);
+}
+	.licension-row {
+	flex-direction: column;
+	padding: 0 36px;
+	margin-bottom: 50px;
+	}
+	.licension-row img {
+  min-width: 90%;
+	}
+	.licension-column p {
+  margin-bottom: 32px;
+	}
+	
+	.licension-column button {
+		width: 100%;
+	}
+}
+
 
 /*===Partners===*/
 .partners__container {
@@ -581,15 +638,24 @@ h6 {
 }
 .partners-row {
   width: 100%;
-  gap: 3vw;
-  /* justify-content: space-between; */
-  /* overflow: hidden; */
+  gap: clamp(15px, 1vw, 50px);
+  /*overflow: hidden;*/
 }
 .partners-row img {
-  width: 5%;
   flex: 1 1;
-  /* object-fit: */
+	width: 5%;
 }
+@media (max-width:1000px){
+	.partners-row {
+  gap:50px;
+  overflow: scroll;
+	}
+.partners-row img {
+  width: auto;
+	}
+}
+
+/*===Subscribe===*/
 .subsribe__container {
 }
 .subscribe__pic {
@@ -604,21 +670,36 @@ h6 {
   background: url('https://raw.githubusercontent.com/kilativ147/Dialog/fa142d09e36d02e634bb5654ba0163a75bb4ae0a/img/Rectangle%2068.png')
     center/cover no-repeat;
   align-items: center;
-  gap: 10%;
-  padding: 10% 5%;
+  gap: clamp(32px, 10vw, 200px);
+  padding: 100px 70px;
   border-radius: 25px;
 }
-.subscibe__content-row p {
+.subscibe__content-row h3 {
   color: #fff;
-  font-size: 24px;
+	font-size: 36px;
+	line-height: 130%;
   text-align: left;
 }
 .subscibe__content-row button {
   font-size: 20px;
-  padding: 1% 3%;
+  padding: 16px 60px;
   border-radius: 50px;
 }
-
+@media (max-width:1000px){
+	.subscibe__content-row {
+		flex-direction: column;
+		padding: 60px 28px;
+	}
+	.subscibe__content-row h3 {
+		text-align: center;
+		font-size: 24px;
+	}
+}
+	
+	
+	
+	
+	
 .hidden {
-  /* display: none; */
+  display: none;
 }
