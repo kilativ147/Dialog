@@ -5,20 +5,18 @@
 	<title>DIALOG: Курси Турецької</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@700;800;900&display=swap');
-	</style>
+	<style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@700;800;900&display=swap'); </style>
 </head>
 
 <body>
 	<div class="wrapper-column">
-		<header class="header hidden">
+		<header class="header ">
 			<div class="header__container">
 				<div class="header__head">
 					<div class="header__logo">
-						<p>DIALOG</p>
+						<a href="#">DIALOG</a>
 					</div>
 					<div class="header__burger"><span></span></div>
 				</div>
@@ -26,36 +24,36 @@
 					<nav class="contacts-row">
 						<div class="contacts__media-row">
 							<a href="http://vk.com">
-								<img src="https://lh3.google.com/u/1/d/1huhogiOj8KSiPd_SG7DbYXhmRkpU-M4Z=w1600-h757-iv1" alt=" " />
+								<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/vk_b.png?raw=true" alt=" " />
 							</a>
 							<a href="http://instagram.com">
-								<img src="https://lh3.google.com/u/1/d/1WMmTH6J_Wge9jod_V7fza0rQ52NBEbeA=w1124-h757-iv1" alt=" " />
+								<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/i_b.png?raw=true" alt=" " />
 							</a>
 							<a href="http://facebok.com">
-								<img src="https://lh3.google.com/u/1/d/1bqIT_64majNzrptCIvYId9F5Fu75Q9qn=w1124-h757-iv1" alt=" " />
+								<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/fb_b.png?raw=true" alt=" " />
 							</a>
 						</div>
 						<div class="contacts__phone-row">
 							<div>
-								<img src="https://lh3.google.com/u/1/d/1-jygCK_FOd7o9GhKJwg074VxRUE3Gaz3=w1124-h757-iv1" alt=" " />
+								<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/phone_r.png?raw=true" alt=" " />
 								<a href="tel:+380981112233">+38 (098) 111-22-33</a>
 							</div>
 							<div>
-								<img src="https://lh3.google.com/u/1/d/1wKiEJFi0DfK2g2ImP61IQJ3BmE-zaUH5=w1124-h757-iv1" alt=" " />
+								<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/whatsapp.png?raw=true" alt=" " />
 								<a href="tel:+380991112233">+38 (099) 111-22-33</a>
 							</div>
 						</div>
 					</nav>
 					<nav class="header__links-row">
 						<ul class="header__nav-list-row">
-							<li><a href="">Про центр</a></li>
-							<li><a href="">Онлайн навчання</a></li>
-							<li><a href="">Відгуки</a></li>
-							<li><a href="">База знань</a></li>
-							<li><a href="">Контакти</a></li>
+							<li><a href="#about" class='nav-but'>Про центр</a></li>
+							<li><a href="#study" class='nav-but'>Онлайн навчання</a></li>
+							<li><a href="#reviews" class='nav-but'>Відгуки</a></li>
+							<li><a href="#curriculum" class='nav-but'>База знань</a></li>
+							<li><a href="#contacts" class='nav-but'>Контакти</a></li>
 						</ul>
 						<button data-param='Замовлення дзвінку'class="header__getcall button-red">
-							<img src="https://lh3.google.com/u/1/d/1-YJwtHpD3HJg9h6P1MKu8-zhJ5X__4s5=w1600-h757-iv1" alt=" " />
+							<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/phone_w.png?raw=true" alt=" " />
 							<span>Замовити дзвінок</span>
 						</button>
 					</nav>
@@ -63,7 +61,7 @@
 			</div>
 		</header>
 		<main class="main-column">
-			<section class="start__container-row hidden">
+			<section class="start__container-row ">
 				<div class="start__text">
 					<p>Ми працюємо онлайн щоденно лише для Вас!</p>
 					<h1>
@@ -72,23 +70,21 @@
 					<button data-param='Запис на пробний урок' class='button-red'><span>Записатися на пробний урок</span></button>
 				</div>
 				<div class="start__pic">
-					<img src="https://lh3.google.com/u/1/d/1ymbRi0oS8MTxObQMqWLhGogUJ4YqiOY2=w1600-h757-iv1" alt=" " />
+					<img src="https://github.com/kilativ147/Dialog/blob/main/img/Rectangle%20602.png?raw=true" alt=" " />
 				</div>
 			</section>
-				<section class="greatings section hidden">
+				<section id='about'class="greatings section ">
 					<p class="subtitle">Привітання</p>
 					<h2 class="title">Давайте знайомитись!</h2>
+					
 					<div class="greatings__video">
-						<video >
-							<!-- Можна підключити декілька форматів, бо не кожен браузер має підтримку того чи іншого формату -->
-							<!-- <source scr='https://www.youtube.com/watch?v=aYtOKQ9LYYQ&list=PLd8BMC1smKFy30qgoznuQG36dWGfx1R47&index=4&ab_channel=scarlxrd' type='video/webm'> -->
-						</vieod>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/RZ10luNUptw" title="ST Games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="greatings__background">
 						<img src="https://github.com/kilativ147/Dialog/blob/main/img/greatings__background.png?raw=true" alt=" ">
 					</div>
 				</section>
-				<section class="programs__container-column section hidden">
+				<section id='study' class="programs__container-column section ">
 					<p class="subtitle">Програми</p>
 					<h2 class="title">Наші програми навчання:</h2>
 					<div class="programs__list-row">
@@ -159,7 +155,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="licension__container section hidden">
+				<section class="licension__container section ">
 					<div class="licension__area"></div>
 					<div class="licension-row">
 						<img src="https://github.com/kilativ147/Dialog/blob/main/img/image 1.png?raw=true" alt=" ">
@@ -170,7 +166,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="partners__container section hidden">
+				<section class="partners__container section ">
 					<p class="subtitle">Партнери</p>
 					<h2 class="title">Наші послуги оцінили:</h2>
 					<div class="partners-row">
@@ -182,32 +178,30 @@
 						<img src="https://github.com/kilativ147/Dialog/blob/main/img/image 7.png?raw=true" alt=" ">
 					</div>
 				</section>
-				<section class="subsribe__container section hidden">
+				<section class="subsribe__container section ">
 					<div class="subscibe__content-row">
 						<h3>Підпишись на 10 безкоштовних уроків "Турецький ринок" в email розсилці для компфортного спілкування
 						</h3>
 						<button data-param='Підписатись на e-mail розсилку' class='button-red'><span>Підписатись</span></button>
 					</div>
 				</section>
-				<section class="curriculum hidden">
-					<div class='curriculum__container section'>
+				<section class="curriculum ">
+					<div id='curriculum' class='curriculum__container section'>
 						<p class="subtitle">Курси</p>
 						<h2 class="title">Загальний курс турецької мови:</h2>
 						<div class='curriculum__content'>
 							<ul class="curriculum__list-levels-row">
-								<li class='curriculum__levels _active'>А1 <span> - початковий рівень</span></li>
-								<li class='curriculum__levels'>А2 <span> - розмовний рівень</span></li>
-								<li class='curriculum__levels'>В1 <span> - самостійне володіння</span></li>
-								<li class='curriculum__levels'>В2 <span> - просунутий рівень</span></li>
-								<li class='curriculum__levels'>С1 <span> - вільне володіння</span></li>
+								<li class='curriculum__levels_item _active'>А1 <span> - початковий рівень</span></li>
+								<li class='curriculum__levels_item'>А2 <span> - розмовний рівень</span></li>
+								<li class='curriculum__levels_item'>В1 <span> - середній рівень</span></li>
+								<li class='curriculum__levels_item'>В2 <span> - просунутий рівень</span></li>
+								<li class='curriculum__levels_item'>С1 <span> - вільне володіння</span></li>
 							</ul>
-							<div class='curriculum-cards-row'>
-								<div class='curriculum-cards_button button__prev'>
-									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/arrow_left.svg" alt=" ">
-								</div>
-								<ul class="curriculum__list-cards">
-									<div class="curriculum-card__area">
-										<h3>Що ви умітимете після проходження навчального рівня А1:</h3>
+							<div class='curriculum_cards_container swiper-container'>
+								<div class="curriculum_wrapper swiper-wrapper">
+									
+									<div class="curriculum_card swiper-slide">
+										<h3>Що ви умітимете по проходженню навчального рівня А1:</h3>
 										<p class="description">Після закінчення цього рівня Ви можете простими пропозиціями розповісти про себе, про свою сім'ю, про своїх друзів, про роботу, описати, що Ви любите і не любите робити, вмієте питати і відповідати яку годину, використовувати цифри від 1 до 1 000, можете підтримати бесіду на побутові теми (ресторан, магазин, вулиця), поставити прості питання співрозмовнику або відповісти самому на теми, пов'язані з аспектами побутового життя: про відпочинок, про їжу та напої, про щоденні справи. Можете написати прості пропозиції з привітаннями та вітаннями друзям та близьким.</p>
 										<div class="curriculum-stats-row">
 											<div class="curriculum-card__about">
@@ -229,7 +223,7 @@
 											
 											<div class="curriculum-card__structure">
 												<h4>СТРУКТУРА КУРСА</h4>
-												<ul class="curriculum-card__structure-list">
+												<ul class="curriculum-card__structure-list cardA1">
 													<li><p>Розмова - <span>40%</span></p>
 														<div></div>
 													</li>
@@ -251,58 +245,271 @@
 											<div class="curriculum-card__materials">
 												<h4>УЧБОВІ МАТЕРІАЛИ</h4>
 													<img src="https://github.com/kilativ147/Dialog/blob/main/img/image 8.png?raw=true" alt=" ">
-												<div class='curriculum-cards_button button__next'>
-												<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/arrow_left.svg" alt=" ">
-												</div>
 											</div>
 										</div>
 									</div>
-								</ul>
+									
+									<div class="curriculum_card swiper-slide">
+										<h3>Що ви умітимете по проходженню навчального рівня А2:</h3>
+										<p class="description">Після закінчення цього рівня Ви можете простими пропозиціями розповісти про себе, про свою сім'ю, про своїх друзів, про роботу, описати, що Ви любите і не любите робити, вмієте питати і відповідати яку годину, використовувати цифри від 1 до 1 000, можете підтримати бесіду на побутові теми (ресторан, магазин, вулиця), поставити прості питання співрозмовнику або відповісти самому на теми, пов'язані з аспектами побутового життя: про відпочинок, про їжу та напої, про щоденні справи. Можете написати прості пропозиції з привітаннями та вітаннями друзям та близьким.</p>
+										<div class="curriculum-stats-row">
+											<div class="curriculum-card__about">
+												<h4>ДЛЯ ДОВІДКИ</h4>
+												<ul class="curriculum-card__about-list">
+													<li><p><span>Тривалість курсу:</span></p>
+														<p>52 академічних години</p>
+													</li>
+													<li><p><span>Тривалість занять:</span></p>
+														<p>2 ак. години (90 хвилин)</p>
+													</li>
+													<li><p><span>Рівень підготовки:</span></p>
+														<p>закінчений рівень А2</p>
+													</li>
+													<li><p>У випадку, якщо Ви не засвоїте матеріал, то зможете пройти його повторно за гарантією якості абсолютно безкоштовно</p>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="curriculum-card__structure">
+												<h4>СТРУКТУРА КУРСА</h4>
+												<ul class="curriculum-card__structure-list cardA2">
+													<li><p>Розмова - <span>50%</span></p>
+														<div></div>
+													</li>
+													<li><p>Граматичність - <span>30%</span></p>
+														<div></div>
+													</li>
+													<li><p>Аудиювання - <span>35%</span></p>
+														<div></div>
+													</li>
+													<li><p>Читання - <span>25%</span></p>
+														<div></div>
+													</li>
+													<li><p>Писання - <span>20%</span></p>
+														<div></div>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="curriculum-card__materials">
+												<h4>УЧБОВІ МАТЕРІАЛИ</h4>
+													<img src="https://github.com/kilativ147/Dialog/blob/main/img/image 8.png?raw=true" alt=" ">
+											</div>
+										</div>
+									</div>
+									
+									<div class="curriculum_card swiper-slide">
+										<h3>Що ви умітимете по проходженню навчального рівня B1:</h3>
+										<p class="description">Після закінчення цього рівня Ви можете простими пропозиціями розповісти про себе, про свою сім'ю, про своїх друзів, про роботу, описати, що Ви любите і не любите робити, вмієте питати і відповідати яку годину, використовувати цифри від 1 до 1 000, можете підтримати бесіду на побутові теми (ресторан, магазин, вулиця), поставити прості питання співрозмовнику або відповісти самому на теми, пов'язані з аспектами побутового життя: про відпочинок, про їжу та напої, про щоденні справи. Можете написати прості пропозиції з привітаннями та вітаннями друзям та близьким.</p>
+										<div class="curriculum-stats-row">
+											<div class="curriculum-card__about">
+												<h4>ДЛЯ ДОВІДКИ</h4>
+												<ul class="curriculum-card__about-list">
+													<li><p><span>Тривалість курсу:</span></p>
+														<p>56 академічних години</p>
+													</li>
+													<li><p><span>Тривалість занять:</span></p>
+														<p>2 ак. години (90 хвилин)</p>
+													</li>
+													<li><p><span>Рівень підготовки:</span></p>
+														<p>закінчений рівень B1</p>
+													</li>
+													<li><p>У випадку, якщо Ви не засвоїте матеріал, то зможете пройти його повторно за гарантією якості абсолютно безкоштовно</p>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="curriculum-card__structure">
+												<h4>СТРУКТУРА КУРСА</h4>
+												<ul class="curriculum-card__structure-list cardB1">
+													<li><p>Розмова - <span>65%</span></p>
+														<div></div>
+													</li>
+													<li><p>Граматичність - <span>40%</span></p>
+														<div></div>
+													</li>
+													<li><p>Аудиювання - <span>45%</span></p>
+														<div></div>
+													</li>
+													<li><p>Читання - <span>40%</span></p>
+														<div></div>
+													</li>
+													<li><p>Писання - <span>30%</span></p>
+														<div></div>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="curriculum-card__materials">
+												<h4>УЧБОВІ МАТЕРІАЛИ</h4>
+													<img src="https://github.com/kilativ147/Dialog/blob/main/img/image 8.png?raw=true" alt=" ">
+											</div>
+										</div>
+									</div>
+									
+									<div class="curriculum_card swiper-slide">
+										<h3>Що ви умітимете по проходженню навчального рівня B2:</h3>
+										<p class="description">Після закінчення цього рівня Ви можете простими пропозиціями розповісти про себе, про свою сім'ю, про своїх друзів, про роботу, описати, що Ви любите і не любите робити, вмієте питати і відповідати яку годину, використовувати цифри від 1 до 1 000, можете підтримати бесіду на побутові теми (ресторан, магазин, вулиця), поставити прості питання співрозмовнику або відповісти самому на теми, пов'язані з аспектами побутового життя: про відпочинок, про їжу та напої, про щоденні справи. Можете написати прості пропозиції з привітаннями та вітаннями друзям та близьким.</p>
+										<div class="curriculum-stats-row">
+											<div class="curriculum-card__about">
+												<h4>ДЛЯ ДОВІДКИ</h4>
+												<ul class="curriculum-card__about-list">
+													<li><p><span>Тривалість курсу:</span></p>
+														<p>40 академічних години</p>
+													</li>
+													<li><p><span>Тривалість занять:</span></p>
+														<p>2 ак. години (90 хвилин)</p>
+													</li>
+													<li><p><span>Рівень підготовки:</span></p>
+														<p>закінчений рівень B2</p>
+													</li>
+													<li><p>У випадку, якщо Ви не засвоїте матеріал, то зможете пройти його повторно за гарантією якості абсолютно безкоштовно</p>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="curriculum-card__structure">
+												<h4>СТРУКТУРА КУРСА</h4>
+												<ul class="curriculum-card__structure-list cardB2">
+													<li><p>Розмова - <span>85%</span></p>
+														<div></div>
+													</li>
+													<li><p>Граматичність - <span>60%</span></p>
+														<div></div>
+													</li>
+													<li><p>Аудиювання - <span>60%</span></p>
+														<div></div>
+													</li>
+													<li><p>Читання - <span>60%</span></p>
+														<div></div>
+													</li>
+													<li><p>Писання - <span>55%</span></p>
+														<div></div>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="curriculum-card__materials">
+												<h4>УЧБОВІ МАТЕРІАЛИ</h4>
+													<img src="https://github.com/kilativ147/Dialog/blob/main/img/image 8.png?raw=true" alt=" ">
+											</div>
+										</div>
+									</div>
+									
+									<div class="curriculum_card swiper-slide">
+										<h3>Що ви умітимете по проходженню навчального рівня C1:</h3>
+										<p class="description">Після закінчення цього рівня Ви можете простими пропозиціями розповісти про себе, про свою сім'ю, про своїх друзів, про роботу, описати, що Ви любите і не любите робити, вмієте питати і відповідати яку годину, використовувати цифри від 1 до 1 000, можете підтримати бесіду на побутові теми (ресторан, магазин, вулиця), поставити прості питання співрозмовнику або відповісти самому на теми, пов'язані з аспектами побутового життя: про відпочинок, про їжу та напої, про щоденні справи. Можете написати прості пропозиції з привітаннями та вітаннями друзям та близьким.</p>
+										<div class="curriculum-stats-row">
+											<div class="curriculum-card__about">
+												<h4>ДЛЯ ДОВІДКИ</h4>
+												<ul class="curriculum-card__about-list">
+													<li><p><span>Тривалість курсу:</span></p>
+														<p>40 академічних години</p>
+													</li>
+													<li><p><span>Тривалість занять:</span></p>
+														<p>3 ак. години (90 хвилин)</p>
+													</li>
+													<li><p><span>Рівень підготовки:</span></p>
+														<p>закінчений рівень C1</p>
+													</li>
+													<li><p>У випадку, якщо Ви не засвоїте матеріал, то зможете пройти його повторно за гарантією якості абсолютно безкоштовно</p>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="curriculum-card__structure">
+												<h4>СТРУКТУРА КУРСА</h4>
+												<ul class="curriculum-card__structure-list cardC1">
+													<li><p>Розмова - <span>95%</span></p>
+														<div></div>
+													</li>
+													<li><p>Граматичність - <span>85%</span></p>
+														<div></div>
+													</li>
+													<li><p>Аудиювання - <span>90%</span></p>
+														<div></div>
+													</li>
+													<li><p>Читання - <span>90%</span></p>
+														<div></div>
+													</li>
+													<li><p>Писання - <span>85%</span></p>
+														<div></div>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="curriculum-card__materials">
+												<h4>УЧБОВІ МАТЕРІАЛИ</h4>
+													<img src="https://github.com/kilativ147/Dialog/blob/main/img/image 8.png?raw=true" alt=" ">
+											</div>
+										</div>
+									</div>
+									
+									
+								</div>
+								<div class='curriculum-cards_button button__prev'>
+									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/arrow_left.svg" alt=" ">
+								</div>
+								<div class='curriculum-cards_button button__next'>
+									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/arrow_left.svg" alt=" ">
+								</div>
+								<div class='swiper-pagination'></div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="mentors__container section hidden">
+				<section id='reviews' class="mentors__container section ">
 					<p class="subtitle">викладачі</p>
 					<h2 class="title">Наші викладачі турецької мови:</h2>
-					<div class='mentors__content-row'>
-						<div class='mentor-column'>
-							<div class="mentor__avatar">
-								<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_1.jpg" alt=" ">
+					<div class='mentors swiper-container'>
+						<div class='mentors__content swiper-wrapper'>
+							<div class='mentor_item swiper-slide'>
+								<div class="mentor__avatar">
+									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_1.jpg" alt=" ">
+								</div>
+								<p><span>Озджан Бей</span></p>
+								<p>Вітаю! Мене звати Озджан. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Я проводжу групові та індивідуальні уроки. Люблю, коли атмосфера на уроках дуже дружня та надихає, а навчання проходить легко та ефективно. Жду вас в нашій школі!</p>
 							</div>
-							<p><span>Озджан Бей</span></p>
-							<p>Вітаю! Мене звати Озджан. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Я проводжу групові та індивідуальні уроки. Люблю, коли атмосфера на уроках дуже дружня та надихає, а навчання проходить легко та ефективно. Жду вас в нашій школі!</p>
-						</div>
-						<div class='mentor-column'>
-							<div class="mentor__avatar">
-								<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_2.jpg" alt=" ">
+							<div class='mentor_item swiper-slide'>
+								<div class="mentor__avatar">
+									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_2.jpg" alt=" ">
+								</div>
+								<p><span>Айдемир Бей</span></p>
+								<p>Вітаю! Мене звати Айдемир. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Я проводжу групові та індивідуальні уроки. Жду вас в нашій школі!</p>
 							</div>
-							<p><span>Айдемир Бей</span></p>
-							<p>Вітаю! Мене звати Айдемир. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Я проводжу групові та індивідуальні уроки. Жду вас в нашій школі!</p>
-						</div>
-						<div class='mentor-column'>
-							<div class="mentor__avatar">
-								<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_1.jpg" alt=" ">
+							<div class='mentor_item swiper-slide'>
+								<div class="mentor__avatar">
+									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_1.jpg" alt=" ">
+								</div>
+								<p><span>Ірина Ханим</span></p>
+								<p>Вітаю! Мене звати Ірина. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Люблю, коли атмосфера на уроках дуже дружня та надихає, а навчання проходить легко та ефективно. Жду вас в нашій школі!</p>
 							</div>
-							<p><span>Ірина Ханим</span></p>
-							<p>Вітаю! Мене звати Ірина. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Люблю, коли атмосфера на уроках дуже дружня та надихає, а навчання проходить легко та ефективно. Жду вас в нашій школі!</p>
-						</div>
-						<div class='mentor-column'>
-							<div class="mentor__avatar">
-								<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_2.jpg" alt=" ">
+							<div class='mentor_item swiper-slide'>
+								<div class="mentor__avatar">
+									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_2.jpg" alt=" ">
+								</div>
+								<p><span>Марія Оварова</span></p>
+								<p>Вітаю! Мене звати Марія. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Я проводжу групові та індивідуальні уроки. Люблю, коли атмосфера на уроках дуже дружня та надихає, а навчання проходить легко та ефективно. Жду вас в нашій школі!</p>
 							</div>
-							<p><span>Марія Оварова</span></p>
-							<p>Вітаю! Мене звати Марія. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Я проводжу групові та індивідуальні уроки. Люблю, коли атмосфера на уроках дуже дружня та надихає, а навчання проходить легко та ефективно. Жду вас в нашій школі!</p>
+								<div class='mentor_item swiper-slide'>
+								<div class="mentor__avatar">
+									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_1.jpg" alt=" ">
+								</div>
+								<p><span>Озджан Бей</span></p>
+								<p>Вітаю! Мене звати Озджан. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Я проводжу групові та індивідуальні уроки. Люблю, коли атмосфера на уроках дуже дружня та надихає, а навчання проходить легко та ефективно. Жду вас в нашій школі!</p>
+							</div>
+							<div class='mentor_item swiper-slide'>
+								<div class="mentor__avatar">
+									<img src="https://raw.githubusercontent.com/kilativ147/Dialog/main/img/mentor_2.jpg" alt=" ">
+								</div>
+								<p><span>Айдемир Бей</span></p>
+								<p>Вітаю! Мене звати Айдемир. Я працюю в мовному центрі "Діалог" вже більше 5 років. За цей час багато хто з моїх студентів навчились дуже добре розмовляти моєю рідною та улюбленою турецькою мовою. Я проводжу групові та індивідуальні уроки. Жду вас в нашій школі!</p>
+							</div>
 						</div>
-					</div>
-					<div class='mentors__switcher-row'>
-						<div class='mentors__switch'></div>
-						<div class='mentors__switch _active'></div>
-						<div class='mentors__switch'></div>
-						<div class='mentors__switch'></div>
+						<div class='mentor__pag swiper-pagination'></div>
 					</div>
 				</section>
-				<section class="howstart__container section hidden">
+				<section class="howstart__container section ">
 					<div class='howstart__content'>
 						<img src='https://github.com/kilativ147/Dialog/blob/main/img/Rectangle%2068%20(1).png?raw=true' alt=''>
 						<div>
@@ -316,7 +523,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="advantages__container section hidden">
+				<section class="advantages__container section ">
 					<p class="subtitle">Переваги</p>
 					<h2 class="title">Наші переваги:</h2>
 					<div class='advantages__content-row'>
@@ -344,7 +551,7 @@
 					</div>
 					<button data-param='Запис на пробний урок' class='button-red'><span>Записатись на пробний урок</span></button>
 				</section>
-				<section class='questions'>
+				<section class='questions '>
 					<img src='https://github.com/kilativ147/Dialog/blob/main/img/Rectangle%2079.png?raw=true' alt=''>
 					<div class='questions__container-row'>
 						<div class='question__text'>
@@ -355,7 +562,7 @@
 					</div>
 				</section>
 		</main>
-		<footer class="footer">
+		<footer id='contacts'class="footer ">
 			<section class='footer__container'>
 				<div class='footer__content-row'>
 					<div class='footer__info-column'>
@@ -365,19 +572,19 @@
 					</div>
 					<div class='footer__about-row'>
 						<nav class='footer__about-column'>
-							<a href='!#'>Про центр</a>
-							<a href='!#'>Курси</a>
-							<a href='!#'>Відгуки учнів</a>
-							<a href='!#'>База знань</a>
-							<a href='!#'>Дізнатись рівень турецької</a>
-							<a href='!#'>Контакти</a>
+							<a href='#about' class='nav-but'>Про центр</a>
+							<a href='#study' class='nav-but'>Курси</a>
+							<a href='#reviews' class='nav-but'>Відгуки учнів</a>
+							<a href='#curriculum' class='nav-but'>База знань</a>
+							<a href='#curriculum' class='nav-but'>Дізнатись рівень турецької</a>
+							<a href='#contacts' class='nav-but'>Контакти</a>
 						</nav>
 						<nav class='footer__about-column'>
-							<a href='!#'>Навчання у групі</a>
-							<a href='!#'>Індивідуальне навчання</a>
-							<a href='!#'>Корпоративне навчання</a>
-							<a href='!#'>Онлайн-навчання</a>
-							<a href='!#'>Курси турецької по Skype</a>
+							<a href='#study' class='nav-but'>Навчання у групі</a>
+							<a href='#study' class='nav-but'>Індивідуальне навчання</a>
+							<a href='#study' class='nav-but'>Корпоративне навчання</a>
+							<a href='#study' class='nav-but'>Онлайн-навчання</a>
+							<a href='#study' class='nav-but'>Курси турецької по Skype</a>
 						</nav>
 					</div>
 					<div class='footer__contacts'>
@@ -388,11 +595,11 @@
 						<p>Контакти</p>
 						<div class='footer__contacts_phones'>
 							<div>
-								<img src="https://lh3.google.com/u/1/d/1-jygCK_FOd7o9GhKJwg074VxRUE3Gaz3=w1124-h757-iv1" alt=" " />
+								<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/phone_r.png?raw=true" alt=" " />
 								<a href="tel:+380981112233">+38 (098) 111-22-33</a>
 							</div>
 							<div>
-								<img src="https://lh3.google.com/u/1/d/1wKiEJFi0DfK2g2ImP61IQJ3BmE-zaUH5=w1124-h757-iv1" alt=" " />
+								<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/whatsapp.png?raw=true" alt=" " />
 								<a href="tel:+380991112233">+38 (099) 111-22-33</a>
 							</div>
 						</div>
@@ -401,13 +608,13 @@
 				<div class='footer__media-row'>
 					<div class='footer__media-social'>
 						<a href="http://vk.com">
-							<img src="https://lh3.google.com/u/1/d/1huhogiOj8KSiPd_SG7DbYXhmRkpU-M4Z=w1600-h757-iv1" alt=" " />
+							<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/vk_w.png?raw=true" alt=" " />
 						</a>
 						<a href="http://instagram.com">
-							<img src="https://lh3.google.com/u/1/d/1WMmTH6J_Wge9jod_V7fza0rQ52NBEbeA=w1124-h757-iv1" alt=" " />
+							<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/i_w.png?raw=true" alt=" " />
 						</a>
 						<a href="http://facebok.com">
-							<img src="https://lh3.google.com/u/1/d/1bqIT_64majNzrptCIvYId9F5Fu75Q9qn=w1124-h757-iv1" alt=" " />
+							<img src="https://github.com/kilativ147/Dialog/blob/main/img/icons/fb_w.png?raw=true" alt=" " />
 						</a>
 					</div>
 					<div class='footer__media-privacy'>
@@ -443,6 +650,7 @@
 			<div class='request__background'></div>
 		</form>
 	</div>
-	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src='script.js'></script>
 </body>
 </html>
