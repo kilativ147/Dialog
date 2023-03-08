@@ -105,6 +105,7 @@ h6 {
 	font-size: 16px;
   background-color: #e6514a;
   color: #fff;
+  transition: all 0.3s ease;
 }
 .button-red:hover {
   background-color: #be312b;
@@ -392,7 +393,22 @@ body._lock{
   overflow: hidden;
   border-radius: 25px;
   box-shadow: 0px 5px 10px #aaa;
+  /* transform: translateX(100%); */
+  
 }
+.start__pic.loaded {
+	animation: start-pic-animation 2s ease forwards;
+}
+
+@keyframes start-pic-animation {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 .start__pic img {
   width: 100%;
   height: 100%;
@@ -781,6 +797,7 @@ body._lock{
 	color: #3035C4;
 	opacity: 0.5;
 	cursor: pointer;
+	margin-bottom: 5px;
 }
 .curriculum__levels_item:hover{
 	opacity:1;
@@ -803,11 +820,23 @@ display:inline-block;
 	content:'';
 	position:absolute;
 	bottom: 0;
-	left:0;
-	transform: translate(0, 20px);
+	left:50%;
+	transform: translate(0, 5px);
 	width:100%;
 	height:3px;
 	background-color:#E6514A;
+	animation: width-animation 0.4s ease forwards;
+}
+
+@keyframes width-animation {
+    from {
+        width: 0%;
+		left:50%;
+    }
+    to {
+        width: 100%;
+		left:0;
+    }
 }
 
 .curriculum_cards_container{
@@ -1660,11 +1689,14 @@ color: #3035C4;
   display: none;
 }
 
+/*======Слайди з анiмацiею======*/
+.slideToAnim{
+	opacity: 0.5;
+	transform: translateY(100px);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
 
-.swiper--container{}
-.swiper--wraper{}
-.swiper--slide{
-	width: 250px;
-	height:250px;
-	background: blue;
+.slideToAnim.animate {
+    opacity: 1;
+    transform: translateY(0);
 }

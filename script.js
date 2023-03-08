@@ -136,3 +136,18 @@ const swiperMentors = new Swiper('.mentors',{
 		}
 	}
 })
+
+//Анiмацiя пiдйома слайдiв
+const myBlock = document.querySelectorAll('.slideToAnim');
+
+function handleScroll() {
+	myBlock.forEach(function(element) {
+		let elementPosition = element.getBoundingClientRect().top;
+		let offset = window.innerHeight - 0; //на каком расстоянии окна от блока - проигрывать анимацию
+		if (elementPosition < offset) {
+		  element.classList.add('animate');
+		}
+	})
+}
+// Добавляем обработчик события прокрутки
+window.addEventListener('scroll', handleScroll);
