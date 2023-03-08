@@ -149,14 +149,16 @@ html{
   margin: 0 auto;
   position: relative;
 }
-.header__logo *{
+.header__logo{
   position: absolute;
   bottom: 2px;
   left: 0;
   font-size: 24px;
   letter-spacing: 3.5px;
   font-weight: 700;
-  color: #e6514a;
+}
+.header__logo a{
+	color: #e6514a;
 }
 
 .header__content-column {
@@ -230,8 +232,7 @@ html{
 }
 
 @media (max-width: 900px) {
-  .header {
-  }
+  .header {}
   .header__head {
     display: flex;
     justify-content: space-between;
@@ -251,14 +252,13 @@ html{
   .header__content-column {
     position: fixed;
     top: -100%;
-		left:0;
+	left:0;
     width: 100%;
     background-color: #fff;
-		box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
+	box-shadow: 0px 5px 20px rgba(28, 28, 28, 0.1);
     overflow: auto;
     z-index: -1;
     transition: top 0.3s ease;
-
     flex-direction: column-reverse;
     margin: 0 auto;
     padding: 40px 0 10px;
@@ -461,24 +461,23 @@ body._lock{
   padding: 0 0 50px 0;
 }
 .greatings__video {
-  /*background-color: #777;*/
+  /* background-color: #777; */
   margin: 0 auto;
-  aspect-ratio: 1.7;
+  aspect-ratio: 1.78;
   width: clamp(200px, 80vw, 600px);
   border-radius: 25px;
   overflow: hidden;
 }
-/*
-<div class="greatings__video">
-						<video >
-							<!-- Можна підключити декілька форматів, бо не кожен браузер має підтримку того чи іншого формату -->
-							<!-- <source scr='https://www.youtube.com/embed/RZ10luNUptw' type='video/webm'>-->
-							<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/RZ10luNUptw"  frameborder="0" allowfullscreen></iframe>  -->
-							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RZ10luNUptw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</video>
-						
-					</div>
-*/
+.greatings__video img {
+	width: 100%;
+	height: 100%;
+}
+.greatings__video iframe {
+	width: 100%;
+	height: 100%;
+}
+
+
 .greatings__background {
   position: absolute;
   bottom: 0;
@@ -678,6 +677,11 @@ body._lock{
 .partners__container p {
 }
 .partners__container h2 {
+}
+@media(max-width: 320px){
+	.partners__container h2 {
+		font-size: 28px;
+	}
 }
 .partners-row {
   width: 100%;
@@ -1076,7 +1080,7 @@ font-weight: 800;
 .mentors{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 50px;
+	padding: 40px 0;
 }
 .mentor_item .swiper-slide {
 	max-width: 300px;
@@ -1157,14 +1161,25 @@ color: #3035C4;
 /*=========How Start========*/
 .howstart__container{
 }
+
+
 .howstart__content{
-	position: relative;
 	padding: 80px 70px;
+	position: relative;
 	color: #fff;
 	text-align: left;
 	box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
 	border-radius: 20px;
 	overflow: hidden;
+}
+@media (max-width: 460px){
+	.howstart__content{
+		padding: 80px 10px;
+		
+	}
+	.howstart__content h2{
+		font-size: 36px;
+	}
 }
 .howstart__content img {
 	position: absolute;
@@ -1308,6 +1323,14 @@ color: #3035C4;
 	font-size: 16px;
 	line-height: 150%;
 	color: #fff;
+}
+@media (max-width:360px){
+	.question__text h2{
+		font-size: 36px;
+	}
+	.question__text p{
+	font-size: 12px;
+	}
 }
 .questions__container-row button{
 	padding: 16px 60px;
@@ -1464,6 +1487,7 @@ color: #3035C4;
 		flex-direction: column;
 		gap: 24px;
 		align-items: center;
+		text-align: center;
 		margin-bottom: 40px;
 	}
 }

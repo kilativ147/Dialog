@@ -73,36 +73,48 @@
 					<img src="https://github.com/kilativ147/Dialog/blob/main/img/Rectangle%20602.png?raw=true" alt=" " />
 				</div>
 			</section>
-				<section id='about'class="greatings section ">
-					<p class="subtitle">Привітання</p>
-					<h2 class="title">Давайте знайомитись!</h2>
-					
-					<div class="greatings__video">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/RZ10luNUptw" title="ST Games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<section id='about'class="greatings section ">
+				<p class="subtitle">Привітання</p>
+				<h2 class="title">Давайте знайомитись!</h2>
+				<div class="greatings__video">
+					<!-- наступний тег э зоною, на яку при клiку виконуэться js скрипт, видаляэться контант зображень, а замiсть них вставляэться вiдео -->
+					<div class="greatings__video-area" 
+					  onclick="this.style.display='none';
+					  var iframe=document.createElement('iframe'); iframe.src='https://www.youtube.com/embed/RZ10luNUptw?autoplay=1&modestbranding=1&showinfo=0&rel=0';
+					  iframe.width='560'; iframe.height='315'; iframe.frameborder='0'; 
+					  iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+					  iframe.allowfullscreen=true; this.parentNode.appendChild(iframe);"
+					  >
+						<img src="https://github.com/kilativ147/Dialog/blob/main/img/Rectangle%2077.png?raw=true" alt=" ">
+						<img style='position: absolute; top: 50%; left: 50%; transform: translate(-50%, 0%); height: 50px; width: 50px; 'src="https://github.com/kilativ147/Dialog/blob/main/img/Vector.png?raw=true" alt=" ">
 					</div>
-					<div class="greatings__background">
-						<img src="https://github.com/kilativ147/Dialog/blob/main/img/greatings__background.png?raw=true" alt=" ">
-					</div>
-				</section>
-				<section id='study' class="programs__container-column section ">
-					<p class="subtitle">Програми</p>
-					<h2 class="title">Наші програми навчання:</h2>
-					<div class="programs__list-row">
-						<div class="programs__program-column">
-							<div class="program__title">
-								<p class="program__price"><span>690</span> грн.</p>
-								<p class="program__description">7 днів доступу до усіх онлайн курсів</p>
-							</div>
-							<ul class="program__advantages-list description">
-								<li>Перевірка тексту</li>
-								<li>Курси від А1 до В1</li>
-								<li>Цікаві вправи</li>
-								<li>Підказки експертів</li>
-								<li>Розмовний клуб</li>
-							</ul>
-							<div class="program__getit">
-								<button data-param='Отримати 7-ми дневний курс' class='button-red'><span>Отримати</span></button>
-								<a href="#!">Дивитись презентацію</a>
+				</div>
+				<!-- <div class="greatings__video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/RZ10luNUptw?modestbranding=1&showinfo=0&rel=0" title="ST Games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture responsive" allowfullscreen></iframe>
+				</div> -->
+				<div class="greatings__background">
+					<img src="https://github.com/kilativ147/Dialog/blob/main/img/greatings__background.png?raw=true" alt=" ">
+				</div>
+			</section>
+			<section id='study' class="programs__container-column section ">
+				<p class="subtitle">Програми</p>
+				<h2 class="title">Наші програми навчання:</h2>
+				<div class="programs__list-row">
+					<div class="programs__program-column">
+						<div class="program__title">
+							<p class="program__price"><span>690</span> грн.</p>
+							<p class="program__description">7 днів доступу до усіх онлайн курсів</p>
+						</div>
+						<ul class="program__advantages-list description">
+							<li>Перевірка тексту</li>
+							<li>Курси від А1 до В1</li>
+							<li>Цікаві вправи</li>
+							<li>Підказки експертів</li>
+							<li>Розмовний клуб</li>
+						</ul>
+						<div class="program__getit">
+							<button data-param='Отримати 7-ми дневний курс' class='button-red'><span>Отримати</span></button>
+							<a href="#!">Дивитись презентацію</a>
 							</div>
 						</div>
 						<div class="programs__program-column">
@@ -549,7 +561,7 @@
 							<p>отримали роботу у турецьких компанія</p>
 						</div>
 					</div>
-					<button data-param='Запис на пробний урок' class='button-red'><span>Записатись на пробний урок</span></button>
+				<button data-param='Запис на пробний урок' class='button-red'><span>Записатись на пробний урок</span></button>
 				</section>
 				<section class='questions '>
 					<img src='https://github.com/kilativ147/Dialog/blob/main/img/Rectangle%2079.png?raw=true' alt=''>
@@ -560,7 +572,7 @@
 						</div>
 						<button data-param='Залишились питання' class='button-red'><span>Задати питання</span></button>
 					</div>
-				</section>
+			</section>
 		</main>
 		<footer id='contacts'class="footer ">
 			<section class='footer__container'>
