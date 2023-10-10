@@ -252,7 +252,7 @@ html{
   }
   .header__content-column {
     position: fixed;
-    top: -100%;
+    top: -100vw;
 	left:0;
     width: 100%;
     background-color: #fff;
